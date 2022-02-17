@@ -11,6 +11,25 @@ This week we will revisit writing C programs.  In IT1050 the programming languag
 
 Write a C program to input marks of two subjects. Calculate and print the average of the two marks.
 
+Answer:
+#include<stdio.h>
+int main (void)
+{
+   int mark1, mark2;
+   float avg;
+
+   printf("Enter marks for subject 01: ");
+   scanf("%d", &mark1);
+   printf("Enter marks for subject 02: ");
+   scanf("%d", &mark2);
+   
+   avg = (mark1 + mark2) / 2;
+   
+   printf("Average is %.2f", avg);
+
+   return 0;
+}
+
 Program File - [Tute01.c](Tute01.c)
  
 ## Exercise 2 - Selection
@@ -34,6 +53,30 @@ Amount = 30 x 50 + (50-30) x 40 = 2300
 ```
 Program File - [Tute02.c](Tute02.c)
 
+Answer:
+#include<stdio.h>
+int main (void)
+{
+    float distance, amount;
+    
+   printf("Distance the van has travelled: ");
+   scanf("%f", &distance);
+
+   if(distance <= 30)
+   {
+      amount = distance * 50;
+   }
+   else
+   {
+      amount = 30 * distance + (distance - 30) * 40; 
+   }
+   printf("Amount should be paid: %.2f", amount);
+   return 0;
+}
+
+
+
+
 ## Exercise 3 - Repetition
 
 Write a C program to calculate the sum of the numbers from 1 to n.
@@ -48,6 +91,16 @@ n -> 1-
 sum = 1+2+3+...+10 = 55
 ```
 Program File - [Tute03.c](Tute03.c)
+
+Answer:
+
+
+
+
+
+
+
+
 
 ## Exercise 4 - Functions
 
